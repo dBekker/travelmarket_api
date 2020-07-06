@@ -313,4 +313,12 @@ if(isset($_POST["get_hotels"]))
 
 }
 echo json_encode($result);
+
+
+//var_dump($_REQUEST);
+//$output = ob_get_clean();
+//file_put_contents('log.txt', $output, FILE_APPEND);
+$log = date('Y-m-d H:i:s')."\n" . '$_REQUEST'."\n" . print_r($_REQUEST, true);
+$log .= 'Responce [0 - LevelTravel, 1 - Travelata, 2 - SletatRu] '."\n" . print_r($arr, true);
+file_put_contents('log.txt', $log . PHP_EOL, FILE_APPEND );
 ?>

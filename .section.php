@@ -1,3 +1,3 @@
 <?
-$sSectionName="lt-test1";
+$sSectionName="lt-test-bekker";
 ?>
